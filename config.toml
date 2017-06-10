@@ -1,0 +1,30 @@
+baseURL = "https://thomastanck.github.io/log/"
+languageCode = "en-US"
+title = "log"
+copyright = "Copyright (c) 2017, all rights reserved."
+theme = "hugo-dusk"
+
+preserveTaxonomyNames = "true"
+
+[author]
+  name = "Thomas Tan"
+
+SectionPagesMenu = "main"
+
+[[menu.main]]
+  name = "Posts"
+  weight = -120
+  identifier = "post"
+  url = "/post/"
+
+[[menu.main]]
+  name = "Tags"
+  weight = -110
+  identifier = "tag"
+  url = "/tags/"
+
+[[menu.main]]
+  name = "About"
+  weight = -100
+  identifier = "about"
+  url = "/about/"
