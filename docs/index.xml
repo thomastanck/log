@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>log</title>
+    <link>https://thomastanck.github.io/log/</link>
+    <description>Recent content on log</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright (c) 2017, all rights reserved.</copyright>
+    <lastBuildDate>Mon, 12 Jun 2017 20:44:09 +0000</lastBuildDate>
+    
+	<atom:link href="https://thomastanck.github.io/log/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>welcome</title>
+      <link>https://thomastanck.github.io/log/post/welcome/</link>
+      <pubDate>Mon, 12 Jun 2017 20:44:09 +0000</pubDate>
+      
+      <guid>https://thomastanck.github.io/log/post/welcome/</guid>
+      <description>Welcome to my log. Here I&amp;rsquo;ll be posting many links to sites with a record of my thoughts and comments on such articles, with occasional long form articles (which I predict I will never actually get around to). In a way, this is just a tumblr replacement. However, I think there was merit in learning how to set up a microblog with Hugo, so this was absolutely not a waste of time.</description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>https://thomastanck.github.io/log/about/</link>
+      <pubDate>Sat, 10 Jun 2017 05:09:10 +0000</pubDate>
+      
+      <guid>https://thomastanck.github.io/log/about/</guid>
+      <description>I am a student who aims to eventually do research in Machine Learning, though I&amp;rsquo;m still very far from that.
+My hobbies tend to come and go, but my hobbies have ranged from piano, osu!, programming, Japanese, to even sewing. My current hobby is playing Euro Truck Simulator 2 while listening to podcasts.
+This blog is self hosted on GitHub Pages at thomastanck.github.io and has a GitHub repository at thomastanck/log. I&amp;rsquo;m using Hugo with a slightly modified version of the hugo-dusk theme.</description>
+    </item>
+    
+  </channel>
+</rss>

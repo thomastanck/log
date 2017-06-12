@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on log</title>
+    <link>https://thomastanck.github.io/log/post/</link>
+    <description>Recent content in Posts on log</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright (c) 2017, all rights reserved.</copyright>
+    <lastBuildDate>Mon, 12 Jun 2017 20:44:09 +0000</lastBuildDate>
+    
+	<atom:link href="https://thomastanck.github.io/log/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>welcome</title>
+      <link>https://thomastanck.github.io/log/post/welcome/</link>
+      <pubDate>Mon, 12 Jun 2017 20:44:09 +0000</pubDate>
+      
+      <guid>https://thomastanck.github.io/log/post/welcome/</guid>
+      <description>Welcome to my log. Here I&amp;rsquo;ll be posting many links to sites with a record of my thoughts and comments on such articles, with occasional long form articles (which I predict I will never actually get around to). In a way, this is just a tumblr replacement. However, I think there was merit in learning how to set up a microblog with Hugo, so this was absolutely not a waste of time.</description>
+    </item>
+    
+  </channel>
+</rss>
