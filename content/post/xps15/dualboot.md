@@ -1,6 +1,6 @@
 +++
 categories = ["articles"]
-date = "2017-06-12T21:12:32Z"
+date = "2017-06-18T05:51:46Z"
 tags = ["article"]
 draft = true
 title = "Dell XPS 15 9560: Dualbooting Windows 10 and Ubuntu 16.04.2 LTS"
@@ -60,7 +60,9 @@ driver for Linux is pretty good.
 
 - **5GB** USB
 - **26GB** of storage for the backup and FTP/a large USB
-- **10 hours** of your time: 1-2 hours to set everything up, 8 hours to troubleshoot when things inevitably go wrong
+- **10 hours** of your time:
+1-2 hours to set everything up,
+8 hours to troubleshoot when things inevitably go wrong
 
 # Pre-installation
 
@@ -167,7 +169,8 @@ You can do this either on a different computer
 or on the preinstalled Windows operating system.
 As Microsoft provides a tool
 to create install USBs,
-using a Windows computer to create the USB might be the most straightforward.
+using a Windows computer to create the USB
+might be the most straightforward.
 Note that I used a Macbook Pro
 to create the installation USB
 so I will not be of very much help here.
@@ -303,4 +306,74 @@ Boot into Ubuntu
 and install **GParted Partition Editor**
 if it isn't already installed,
 then create a new ntfs partition
-that fills the remainder of the space.
+that fills the space remaining.
+
+## Additional tweaks
+
+### HiDPI scaling
+
+The very first thing I noticed
+when I installed Ubuntu was that
+everything was extremely tiny
+as the XPS 15 has a 4k screen.
+
+Tap the windows key
+and open up the Displays preference dialog,
+and change the
+**Scale for menu and title bars** slider to around *2.5*
+
+### mtrack
+
+I highly suggest
+installing a custom touchpad driver
+like mtrack
+because I personally find tap to drag absolutely horrific
+since it delays the time your taps take effect.
+Disabling tap to drag is also annoying
+since dragging/selecting is such a common operation.
+
+Instead I much prefer OS X's *three finger drag*
+as it solves both problems at the same time.
+The only driver I could find that actually does this is mtrack.
+
+To install it, run:
+
+```sh
+sudo apt install xserver-xorg-input-mtrack-hwe-16.04
+sudo gedit /etc/X11/xorg.conf.d/90-mtrack.conf # Configure mtrack
+sudo gedit /usr/share/X11/xorg.conf.d/60-libinput.conf # Disable existing touchpad driver
+sudo systemctl restart lightdm.service # Will log out out of your system forcefully
+```
+
+You may need to
+add yourself to the input group
+if it doesn't work,
+so that the mtrack driver can
+open the /dev/input/device\* device file.
+
+```sh
+sudo gpasswd -a $USER input
+logout # and back in for the group to take effect
+```
+
+### TLP
+
+Save power.
+
+Running i3wm,
+I had ~6 hours battery life just idling.
+After installing TLP,
+it increased to ~8 hours.
+
+```sh
+sudo apt install tlp
+```
+
+### Hybrid suspend
+
+Honestly not exactly sure what this does,
+but I think this causes the laptop to hibernate
+when you close the laptop lid.
+
+Follow the instructions at the last 2 sections of
+[https://karlgrz.com/dell-xps-15-ubuntu-tweaks/](https://karlgrz.com/dell-xps-15-ubuntu-tweaks/)
