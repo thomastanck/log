@@ -1,4 +1,4 @@
-baseURL = "https://thomastanck.github.io/log/"
+baseURL = "https://thomastanck.github.io/"
 languageCode = "en-US"
 title = "log"
 copyright = "Copyright (c) 2017, all rights reserved."
