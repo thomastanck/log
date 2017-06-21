@@ -5,6 +5,7 @@ copyright = "Copyright (c) 2017, all rights reserved."
 theme = "hugo-dusk"
 
 preserveTaxonomyNames = "true"
+publishDir = "thomastanck.github.io"
 
 [author]
   name = "Thomas Tan"
