@@ -7,7 +7,7 @@ cd "$(dirname "$0")"
 
 	# In case .bashrc isn't soured e.g. in a noninteractive terminal
 	# This happens when you run a command via `ssh host 'command'`
-	source ~/.bashrc
+	source ~/.bashrc force
 
 	git pull
 
