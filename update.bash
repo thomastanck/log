@@ -5,6 +5,10 @@ cd "$(dirname "$0")"
 	# Ensure only one instance of this script is running
 	flock -n 9 || exit 1
 
+	# In case .bashrc isn't soured e.g. in a noninteractive terminal
+	# This happens when you run a command via `ssh host 'command'`
+	source ~/.bashrc
+
 	git pull
 
 	mv thomastanck.github.io/.git .tmpgit
