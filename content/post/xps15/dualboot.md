@@ -7,34 +7,13 @@ title = "Dell XPS 15 9560: Dualbooting Windows 10 and Ubuntu 16.04.2 LTS"
 
 +++
 
-# TL;DR
-
-2. Note down your Windows 10 Product ID, Product Key, Microsoft Office Product key(s) if installed, and MacAfee Product key if installed
-2. Disable hibernation/fast boot
-3. Boot into BIOS
-4. Disable Secure Boot
-5. Change SATA mode to AHCI
-6. Boot into Ubuntu Live USB
-1. Image back up (26GB storage, use FTP/USB to transfer to a different computer, etc)
-7. (Optional) <s>Nuke </s>Reformat SSD
-8. Install Windows
-9. Install Ubuntu
-10. Create shared media partition
-11. Buy lakeside property (not included under warranty)
-12. Enjoy your new laptop
-
-# Preamble
-
 I bought a [Dell XPS 15 9560](https://www.amazon.com/Dell-XPS9560-7001SLV-PUS-Laptop-Nvidia-Gaming/dp/B01N1Q0M4O) today
-and was determined to set up both Ubuntu and Windows on the laptop.
+and decided to set up both Ubuntu and Windows on the laptop.
 
 My XPS 15 has a 512GB SSD and a 3840x2160 touchscreen.
 Note that 512GB is in [GB](https://en.wikipedia.org/wiki/Gigabyte) and not in [GiB](https://en.wikipedia.org/wiki/Gibibyte),
 so you will see both Windows/Ubuntu reporting the size as
 around 476 "GB/GiB".
-This is apparently a cheap marketing ploy
-to sell drives that look larger than they are,
-but this is normal so don't panic!
 
 I'm pretty happy about the size of the SSD,
 but since I'm trying to install
@@ -51,10 +30,23 @@ as it seems that the
 ntfs-3g #link#
 driver for Linux is pretty good.
 
-> I'll be including justifications/explanations
-> in blockquotes like these.
-> Feel free to skip reading these
-> if you trust me ;)
+<!--more-->
+
+# TL;DR
+
+1. Note down your Windows 10 Product ID, Product Key, Microsoft Office Product key(s) if installed, and MacAfee Product key if installed
+2. Disable hibernation/fast boot
+3. Boot into BIOS
+4. Disable Secure Boot
+5. Change SATA mode to AHCI
+6. Boot into Ubuntu Live USB
+7. Image back up (26GB storage, use FTP/USB to transfer to a different computer, etc)
+8. (Optional) <s>Nuke </s>Reformat SSD
+9. Install Windows
+10. Install Ubuntu
+11. Create shared media partition
+12. Buy lakeside property (not included under warranty)
+13. Enjoy your new laptop
 
 ## What you will need
 
@@ -68,11 +60,11 @@ driver for Linux is pretty good.
 
 ## Factory back up
 
-> The first step is to back up
-> the entire drive
-> after receiving the laptop in factory condition.
-> This is to allow you to safely resell your laptop
-> or to roll back your changes if you messed up.
+The first step is to back up
+the entire drive
+after receiving the laptop in factory condition.
+This is to allow you to safely resell your laptop
+or to roll back your changes if you messed up.
 
 If you set up the laptop at the store,
 you will need to
