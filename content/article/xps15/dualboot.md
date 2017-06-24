@@ -29,7 +29,6 @@ ntfs
 as it seems that the
 ntfs-3g #link#
 driver for Linux is pretty good.
-
 <!--more-->
 
 # TL;DR

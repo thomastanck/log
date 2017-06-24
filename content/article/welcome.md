@@ -7,7 +7,6 @@ title = "Welcome"
 +++
 
 Welcome to my log. Here I'll be posting many links to sites with a record of my thoughts and comments on such articles, with occasional long form articles (which I predict I will never actually get around to). In a way, this is just a [tumblr](https://www.tumblr.com) replacement. However, I think there was merit in learning how to set up a microblog with [Hugo](https://gohugo.io/), so this was absolutely not a waste of time.
-
 <!--more-->
 
 */me stops rationalising*

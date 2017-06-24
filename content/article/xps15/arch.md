@@ -26,7 +26,6 @@ contains everything you need to know.
 However,
 if you're a Linux n00b like me,
 this article may be useful.
-
 <!--more-->
 
 # Pre-installation
