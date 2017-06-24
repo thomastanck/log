@@ -13,10 +13,10 @@ publishDir = "thomastanck.github.io"
 SectionPagesMenu = "main"
 
 [[menu.main]]
-  name = "Posts"
+  name = "Articles"
   weight = -120
-  identifier = "post"
-  url = "/post/"
+  identifier = "article"
+  url = "/article/"
 
 [[menu.main]]
   name = "Tags"

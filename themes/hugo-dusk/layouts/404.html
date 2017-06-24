@@ -14,9 +14,9 @@
   {{ end }}
   </ul>
 
-  <h2>Posts</h2>
+  <h2>Articles</h2>
   <ul>
-  {{ range (where .Site.Pages.ByTitle ".Type" "post") }}
+  {{ range (where .Site.Pages.ByTitle ".Type" "article") }}
       <li><article itemscope itemtype="http://schema.org/Blog">
           <a href="{{ .Permalink }}">{{ .Title }}</a>
       </article></li>
