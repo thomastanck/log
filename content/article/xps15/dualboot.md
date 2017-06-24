@@ -107,11 +107,11 @@ to get into the BIOS settings.
 3. Navigate to **System Configuration** > **SATA Operation**
 4. Change option to **AHCI** and apply changes
 
-![Disabling Secure Boot](/post/xps15/secure-boot.png)
+![Disabling Secure Boot](/article/xps15/secure-boot.png)
 
 *Image taken from Dell support ([link](http://www.dell.com/support/article/sg/en/sgdhs1/sln142679/en))*
 
-![Changing SATA Operation to AHCI](/post/xps15/sata-ahci.jpeg)
+![Changing SATA Operation to AHCI](/article/xps15/sata-ahci.jpeg)
 
 
 *Image taken from @sebvance at Medium ([link](https://medium.com/@sebvance/how-to-upgrade-a-dell-xps-15-9550-to-a-samsung-960-evo-nvme-m-2-ssd-1d64eed914a9))*
