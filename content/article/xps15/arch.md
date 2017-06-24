@@ -1,7 +1,11 @@
 +++
-categories = ["articles"]
+categories = [
+"articles",
+]
 date = "2017-06-23T14:18:35Z"
-tags = ["article"]
+tags = [
+"article",
+]
 draft = true
 title = "Dell XPS 15 9560: Installing Arch Linux"
 

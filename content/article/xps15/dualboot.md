@@ -1,7 +1,11 @@
 +++
-categories = ["articles"]
+categories = [
+"articles",
+]
 date = "2017-06-18T05:51:46Z"
-tags = ["article"]
+tags = [
+"article",
+]
 draft = true
 title = "Dell XPS 15 9560: Dualbooting Windows 10 and Ubuntu 16.04.2 LTS"
 

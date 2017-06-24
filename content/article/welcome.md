@@ -1,7 +1,11 @@
 +++
-categories = ["articles"]
+categories = [
+"articles",
+]
 date = "2017-06-12T20:44:09Z"
-tags = ["article"]
+tags = [
+"article",
+]
 title = "Welcome"
 
 +++
