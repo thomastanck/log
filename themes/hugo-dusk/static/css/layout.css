@@ -352,6 +352,7 @@ th, td {
 .article-preview .logtitle a {
   color: #99cc66;
   padding-right: 0.4em;
+  display: block;
 }
 
 .article-preview .logtitle a:hover {
