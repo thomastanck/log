@@ -2,7 +2,7 @@
 categories = ["about"]
 date = "2017-06-10T05:09:10Z"
 tags = ["about"]
-title = "about"
+title = "About"
 
 +++
 
