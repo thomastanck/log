@@ -1,6 +1,6 @@
 baseURL = "https://thomastanck.github.io/"
 languageCode = "en-US"
-title = "log"
+title = "TT"
 copyright = "Copyright (c) 2017, all rights reserved."
 theme = "hugo-dusk"
 
@@ -11,6 +11,12 @@ publishDir = "thomastanck.github.io"
   name = "Thomas Tan"
 
 SectionPagesMenu = "main"
+
+[[menu.main]]
+  name = "Log"
+  weight = -130
+  identifier = "log"
+  url = "/log/"
 
 [[menu.main]]
   name = "Articles"

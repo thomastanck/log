@@ -3,6 +3,20 @@
 
 <main>
 
+<h1>Recent logs</h1>
+
+{{ range (first 2 ((where .Data.Pages "Type" "log").GroupByDate "Jan 2, 2006")) }}
+  <div class="meta">
+    {{ .Key }}
+  </div>
+  {{ range .Pages }}
+    {{ .Render "logsummary" }}
+  {{ end }}
+{{ end }}
+<div class="rmore"><a href="/log/">View log...</a></div>
+
+<h1>Articles</h1>
+
 {{ $paginator := .Paginate (where .Data.Pages "Type" "article") }}
   {{ range $paginator.Pages }}
     {{ .Render "summary" }}
