@@ -5,9 +5,10 @@ cd "$(dirname "$0")"
 	# Ensure only one instance of this script is running
 	flock -n 9 || exit 1
 
-	# In case .bashrc isn't soured e.g. in a noninteractive terminal
-	# This happens when you run a command via `ssh host 'command'`
-	source ~/.bashrc force
+	# Set go path
+	# which may not be set
+	# if script is running in a noninteractive shell.
+	source ~/dotfiles/sh/rc.d/11-gopath
 
 	git pull
 
