@@ -15,10 +15,9 @@ echo 'date = "'$timestamp'"' >> $filename
 echo 'tags = ["log"]' >> $filename
 echo 'title = "!#title#!"' >> $filename
 echo 'link = "'$link'"' >> $filename
+echo 'summary = ""' >> $filename
 echo '' >> $filename
 echo '+++' >> $filename
-echo '' >> $filename
-echo '<!--more-->' >> $filename
 
 vim +'execute "normal! /!#title#!\<CR>"' $filename
 
