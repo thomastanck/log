@@ -15,4 +15,5 @@ echo 'link = "'$link'"' >> $filename
 echo '' >> $filename
 echo '+++' >> $filename
 echo '' >> $filename
+echo '<!--more-->' >> $filename
 vim +'execute "normal! /!#title#!\<CR>"' $filename
