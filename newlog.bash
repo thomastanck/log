@@ -22,4 +22,4 @@ echo '+++' >> $filename
 vim +'execute "normal! /!#title#!\<CR>"' $filename
 
 git add $filename
-git commit
+git commit -m 'New log.'
