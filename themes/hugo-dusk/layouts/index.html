@@ -6,12 +6,14 @@
 <h1>Recent logs</h1>
 
 {{ range (first 2 ((where .Data.Pages "Type" "log").GroupByDate "Jan 2, 2006")) }}
-  <div class="meta">
-    {{ .Key }}
+  <div class="log">
+  <div class="logmeta">
+    {{ .Key }} - {{ len .Pages }} {{ if eq (len .Pages) 1 }}log{{ else }}logs{{ end }}
   </div>
   {{ range .Pages }}
     {{ .Render "logsummary" }}
   {{ end }}
+  </div>
 {{ end }}
 <div class="rmore"><a href="/log/">View log...</a></div>
 
