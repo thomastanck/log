@@ -16,6 +16,7 @@ echo 'tags = ["log"]' >> $filename
 echo 'title = "!#title#!"' >> $filename
 echo 'link = "'$link'"' >> $filename
 echo 'summary = ""' >> $filename
+echo 'isimage = false' >> $filename
 echo '' >> $filename
 echo '+++' >> $filename
 
