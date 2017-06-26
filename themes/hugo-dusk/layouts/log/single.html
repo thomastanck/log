@@ -3,6 +3,10 @@
 <article class="article">
     <h1 class="title"> {{ .Title }} </h1>
 	<div class="content">
+		{{ if .Params.isimage }}
+			<a href="{{ .Params.link }}"><img src="{{ .Params.link }}" alt="{{ .Params.link }}" /></a>
+		{{ end }}
+			<p class="loglink"> <a href="{{ .Params.link }}">{{ .Params.link }}</a> </p>
 		<p> {{ .Params.summary }} </p>
 		{{ .Content }}
 	</div>

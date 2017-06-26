@@ -173,6 +173,19 @@ th, td {
   margin: 0em 0em;
 }
 
+.article .content .loglink {
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.article .content .loglink a {
+  text-decoration: none;
+}
+
+.article .content .loglink a:hover {
+  text-decoration: underline;
+}
+
 .article-footer-data {
   display: -webkit-flex;
   -webkit-flex-direction: column;
