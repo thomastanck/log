@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+
+<h2 class="content-list-title">
+    <a href="{{ .Permalink }}" class="linktoarticle">{{ .Title }}</a>
+</h2>
+
+<div class="logs">
+{{ range .Data.Pages.GroupByDate "Jan 2, 2006" }}
+  {{ partial "loglist" . }}
+{{ end }}
+</div>
+
+
+{{ partial "footer.html" . }}

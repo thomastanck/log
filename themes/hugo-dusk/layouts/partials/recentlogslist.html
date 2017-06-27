@@ -1,0 +1,8 @@
+  <div class="log-list">
+  <div class="logmeta">
+    {{ .Key }} — {{ len .Pages }} {{ if eq (len .Pages) 1 }}log{{ else }}logs{{ end }}
+  </div>
+  {{ range .Pages }}
+    {{ .Render "logsummary" }}
+  {{ end }}
+  </div>

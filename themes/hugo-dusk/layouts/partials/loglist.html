@@ -1,0 +1,8 @@
+  <div class="log-list">
+  <div class="logmeta">
+    {{ .Key }}
+  </div>
+  {{ range .Pages }}
+    {{ .Render "logsummary" }}
+  {{ end }}
+  </div>

@@ -337,11 +337,11 @@ th, td {
 
 /* summary list on main page  */
 
-.log a {
+.log-list a {
   text-decoration: none;
 }
 
-.log .logmeta {
+.log-list .logmeta {
   font-size: 0.8em;
   font-weight: bold;
   padding-top: 0.6em;
