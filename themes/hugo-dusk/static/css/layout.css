@@ -349,7 +349,7 @@ th, td {
 }
 
 .log-item .logtitle {
-  width: 30%;
+  width: 40%;
   //margin-bottom: 0.3em;
   line-height: 1.4em;
   float: left;
@@ -367,7 +367,7 @@ th, td {
 }
 
 .log-item .logsummary {
-  width: 70%;
+  width: 60%;
   //margin-top: 0.2em;
   line-height: 1.4em;
   float: left;
