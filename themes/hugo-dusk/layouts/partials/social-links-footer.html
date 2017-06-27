@@ -24,4 +24,10 @@
   <a href="{{ .Site.RSSLink }}" target="_blank">RSS</a>
   </div>
 
+  {{if .RSSLink}}
+  <div class="social-link">
+  <a href="{{ .RSSLink }}" target="_blank">RSS just for {{ .Title }}</a>
+  </div>
+  {{end}}
+
 </div>
