@@ -28,6 +28,10 @@
   <div class="social-link">
   <a href="{{ .RSSLink }}" target="_blank">RSS just for {{ .Title }}</a>
   </div>
+  {{else if .Type}}
+  <div class="social-link">
+	  <a href="{{ .Type }}/rss.xml" target="_blank">RSS just for {{ .Type | humanize | pluralize }}</a>
+  </div>
   {{end}}
 
 </div>
