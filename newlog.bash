@@ -1,4 +1,4 @@
-cd "$(dirname "$0")"
+cd "$(dirname $(readlink -f "$0"))"
 
 link="$1"
 [ -z "$1" ] && read link

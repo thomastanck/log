@@ -1,4 +1,4 @@
-cd "$(dirname "$0")"
+cd "$(dirname $(readlink -f "$0"))"
 
 link="$(xclip -o)"
 curdate=$(date +%Y_%m_%d)
