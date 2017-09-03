@@ -1,6 +1,7 @@
 #!/bin/bash
 cd "$(dirname "$0")"
 
+mkdir -p /tmp/var/lock
 (
 	# Ensure only one instance of this script is running
 	flock -n 9 || exit 1
@@ -27,4 +28,4 @@ cd "$(dirname "$0")"
 	git add thomastanck.github.io
 	git commit -m "Update site."
 	git push
-) 9>/var/lock/log-hugo-update.lock
+) 9>/tmp/var/lock/log-hugo-update.lock
